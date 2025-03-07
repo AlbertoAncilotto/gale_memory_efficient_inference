@@ -1,0 +1,6 @@
+python validate_gale.py --model timm/mobilenetv2_110d.ra_in1k  --img-size 256 --replace_conv --conv_slices 16 --conv_split_blocks 4 --conv_threshold 5 --log_model_depth 1
+python validate_gale.py --model timm/timm/mobilenetv3_large_100.ra_in1k --img-size 256 --replace_conv --conv_slices 16 --conv_split_blocks 4 --conv_threshold 5 --log_model_depth 1
+python validate_gale.py --model timm/mobilenetv4_hybrid_medium.e200_r256_in12k_ft_in1k --img-size 256 --replace_conv --conv_slices 8 --conv_split_blocks 3 --conv_threshold 50 --log_model_depth 8 --replace_attention --invaried_att_blocks 2
+python validate_gale.py --model timm/resnet50.tv2_in1k  --img-size 256 --replace_conv --conv_slices 16 --conv_split_blocks 4 --conv_threshold 5 --log_model_depth 1
+python validate_gale.py --model timm/efficientvit_b2.r224_in1k --img-size 256 --replace_conv --conv_slices 8 --conv_split_blocks 3 --conv_threshold 0.5 --log_model_depth 8 --replace_attention --invaried_att_blocks 6
+python validate_gale.py --model timm/fastvit_sa12.apple_dist_in1k  --img-size 256 --replace_conv --conv_slices 8 --conv_split_blocks 3 --conv_threshold 50 --log_model_depth 8 --replace_attention --invaried_att_blocks 2
